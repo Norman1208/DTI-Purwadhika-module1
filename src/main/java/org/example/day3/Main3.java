@@ -76,7 +76,7 @@ public class Main3 {
 //        }
 //
 //        // split the string into two parts using the operator
-//        String[] parts = allNum.split("\\"+ operator);
+//        String[] parts = allNum.split("\\"+ operator); // "\\" use as single backslash in regex for escape operator
 //        double num1 = Double.parseDouble(parts[0]);
 //        double num2 = Double.parseDouble(parts[1]);
 //
@@ -133,92 +133,92 @@ public class Main3 {
 //        generator.generate(n);
 //        System.out.println("");
 
-        // day 3 no 7
-        // create an instance of the vowelcounter class
-        vowelCounter vowelCounter = new vowelCounter();
-
-        // prompt the user to enter a string
-        System.out.println("Vowel Counter program");
-        System.out.println("Enter a String:");
-        String string1 = input.nextLine();
-
-        // count the number of vowels
-        int vowelCount = vowelCounter.countVowels(string1);
-
-        // print the result
-        System.out.println("Number of vowels: "+ vowelCount);
-
-        // day 3 no 8
-        System.out.println("Bubble Sort Program");
-        System.out.print("Enter the size of the array: ");
-        int size1 = input.nextInt();
-
-        // create an array of the given size
-        int[] array1 = new int[size1];
-
-        // prompt the user to element of the array
-        System.out.println("Enter "+ size1 +" elements:");
-        for (int i = 0; i < size1 ; i++){
-            array1[i] = input.nextInt();
-        }
-
-        // create an isntance of the bubblesort class
-        bubbleSort bubbleSort = new bubbleSort();
-
-        // sort the array using bubble sort
-        bubbleSort.sort(array1);
-
-        // print the sorted array
-        System.out.println("Sorted array: ");
-        for (int i = 0; i < size1; i++){
-            System.out.print(array1[i] + " ");
-        }
-
-        // day 3 no 9
-        // create an instances of the anagram checker class
-        anagramChecker checker = new anagramChecker();
-
-        // prompt user to enter two string
-        System.out.println("Anagram Checker Program");
-        System.out.println("Enter the first string: ");
-        String str1 = input.nextLine();
-        System.out.println("Enter the second string: ");
-        String str2 = input.nextLine();
-
-        // Check if the strings are anagrams
-        boolean result3 = checker.areAnagrams(str1, str2);
-
-        //print the result
-        System.out.println("Are the String anagrams ? "+ result3);
-
-        // day 3 no 10
-        // prompt the user to enter the size of array
-        System.out.println("Second Smallest Finder Program");
-        System.out.println("Enter the size of the array: ");
-        int size3 = input.nextInt();
-
-        // create an array of the given size
-        int[] array2 = new int[size3];
-
-        // prompt the user to enter elements of the array
-        System.out.println("Enter "+size3+" elements: ");
-        for(int i = 0; i < size3; i++) {
-            array2[i] = input.nextInt();
-        }
-
-        //create an instance of the second smallestfinder class
-        secondSmallestFinder finder2 = new secondSmallestFinder();
-
-        try {
-            // find the second smallest element
-            int secondSmallest = finder2.findSecondSmallest(array2);
-
-            // print the result
-            System.out.println("The second smallest element is: "+ secondSmallest);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
+//        // day 3 no 7
+//        // create an instance of the vowelcounter class
+//        vowelCounter vowelCounter = new vowelCounter();
+//
+//        // prompt the user to enter a string
+//        System.out.println("Vowel Counter program");
+//        System.out.println("Enter a String:");
+//        String string1 = input.nextLine();
+//
+//        // count the number of vowels
+//        int vowelCount = vowelCounter.countVowels(string1);
+//
+//        // print the result
+//        System.out.println("Number of vowels: "+ vowelCount);
+//
+//        // day 3 no 8
+//        System.out.println("Bubble Sort Program");
+//        System.out.print("Enter the size of the array: ");
+//        int size1 = input.nextInt();
+//
+//        // create an array of the given size
+//        int[] array1 = new int[size1];
+//
+//        // prompt the user to element of the array
+//        System.out.println("Enter "+ size1 +" elements:");
+//        for (int i = 0; i < size1 ; i++){
+//            array1[i] = input.nextInt();
+//        }
+//
+//        // create an isntance of the bubblesort class
+//        bubbleSort bubbleSort = new bubbleSort();
+//
+//        // sort the array using bubble sort
+//        bubbleSort.sort(array1);
+//
+//        // print the sorted array
+//        System.out.println("Sorted array: ");
+//        for (int i = 0; i < size1; i++){
+//            System.out.print(array1[i] + " ");
+//        }
+//
+//        // day 3 no 9
+//        // create an instances of the anagram checker class
+//        anagramChecker checker = new anagramChecker();
+//
+//        // prompt user to enter two string
+//        System.out.println("Anagram Checker Program");
+//        System.out.println("Enter the first string: ");
+//        String str1 = input.nextLine();
+//        System.out.println("Enter the second string: ");
+//        String str2 = input.nextLine();
+//
+//        // Check if the strings are anagrams
+//        boolean result3 = checker.areAnagrams(str1, str2);
+//
+//        //print the result
+//        System.out.println("Are the String anagrams ? "+ result3);
+//
+//        // day 3 no 10
+//        // prompt the user to enter the size of array
+//        System.out.println("Second Smallest Finder Program");
+//        System.out.println("Enter the size of the array: ");
+//        int size3 = input.nextInt();
+//
+//        // create an array of the given size
+//        int[] array2 = new int[size3];
+//
+//        // prompt the user to enter elements of the array
+//        System.out.println("Enter "+size3+" elements: ");
+//        for(int i = 0; i < size3; i++) {
+//            array2[i] = input.nextInt();
+//        }
+//
+//        //create an instance of the second smallestfinder class
+//        secondSmallestFinder finder2 = new secondSmallestFinder();
+//
+//        try {
+//            // find the second smallest element
+//            int secondSmallest = finder2.findSecondSmallest(array2);
+//
+//            // print the result
+//            System.out.println("The second smallest element is: "+ secondSmallest);
+//        } catch (IllegalArgumentException e) {
+//            System.out.println(e.getMessage());
+//        } catch (IllegalAccessException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 }
