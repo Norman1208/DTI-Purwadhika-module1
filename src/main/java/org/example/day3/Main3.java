@@ -119,34 +119,35 @@ public class Main3 {
 //        // print the result
 //        System.out.println("Reverse String: "+ reversed);
 //
-//        // day 3 no 6
-//        // create instance of fibonacciGenerator class
-//        fibonacciGenerator generator = new fibonacciGenerator();
-//
-//        // prompt the user to enter the number of terms
-//        System.out.println("Fibonacci Generator Program");
-//        System.out.println("Enter the number of terms: ");
-//        int n = input.nextInt();
-//
-//        // generate the fibonacci sequence up to n terms
-//        System.out.println("Fibonacci Sequence: ");
-//        generator.generate(n);
-//        System.out.println("");
+        // day 3 no 6
+        // create instance of fibonacciGenerator class
+        fibonacciGenerator generator = new fibonacciGenerator();
 
-//        // day 3 no 7
-//        // create an instance of the vowelcounter class
-//        vowelCounter vowelCounter = new vowelCounter();
-//
-//        // prompt the user to enter a string
-//        System.out.println("Vowel Counter program");
-//        System.out.println("Enter a String:");
-//        String string1 = input.nextLine();
-//
-//        // count the number of vowels
-//        int vowelCount = vowelCounter.countVowels(string1);
-//
-//        // print the result
-//        System.out.println("Number of vowels: "+ vowelCount);
+        // prompt the user to enter the number of terms
+        System.out.println("Fibonacci Generator Program");
+        System.out.println("Enter the number of terms: ");
+        int n = input.nextInt();
+
+        // generate the fibonacci sequence up to n terms
+        System.out.println("Fibonacci Sequence: ");
+        generator.generate(n);
+        System.out.println("");
+        input.nextLine();
+
+        // day 3 no 7
+        // create an instance of the vowelcounter class
+        vowelCounter vowelCounter = new vowelCounter();
+
+        // prompt the user to enter a string
+        System.out.println("Vowel Counter program");
+        System.out.println("Enter a String:");
+        String string1 = input.nextLine();
+
+        // count the number of vowels
+        int vowelCount = vowelCounter.countVowels(string1);
+
+        // print the result
+        System.out.println("Number of vowels: "+ vowelCount);
 //
 //        // day 3 no 8
 //        System.out.println("Bubble Sort Program");
