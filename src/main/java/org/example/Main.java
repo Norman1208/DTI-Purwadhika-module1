@@ -3,12 +3,15 @@ package org.example;
 import org.example.day1.*;
 import org.example.day2.*;
 import org.example.day3.*;
+import org.example.day4.*;
+import org.example.day5.*;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
 
 //        rectangleArea recArea = new rectangleArea();
 //
