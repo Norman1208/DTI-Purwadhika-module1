@@ -1,7 +1,10 @@
 package org.example;
 
 import org.example.day6.*;
+import org.example.day7.AverageCalculator;
+import org.example.day7.ProductSalesCalculator;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,6 +22,8 @@ public class Main {
         System.out.println("6. String Reverser");
         System.out.println("7. Duplicate Finder");
         System.out.println("8. Number of day until get the warmer temperature");
+        System.out.println("9. Average Calculator");
+        System.out.println("10. Product sales calculator with input from CSV");
 
         // input for case
         System.out.print("Enter your number of case (0 to end the case): ");
@@ -43,10 +48,26 @@ public class Main {
                     DuplicateIdentifier.run();
                 case 8:
                     WarmerDayCounter.run();
+                case 9:
+                    AverageCalculator calculator = new AverageCalculator();
+
+                    // call the method to calculate and display the average
+                    calculator.calculateAverage();
+                    calculator.displayAverage();
+
+                case 10:
+                    // create an object
+                    ProductSalesCalculator salesCalculator = new ProductSalesCalculator();
+
+                    // try to call the result method to process CSV file
+                    try {
+                        salesCalculator.result();
+                    } catch (FileNotFoundException e) {
+                        System.out.println("File not found! Please check the file path.");
+                    } catch (Exception e) {
+                        System.out.println("An error ocurred: " + e.getMessage());
+                    }
             }
         }
-
-//
-//        System.out.println("Hello world!");
     }
 }
