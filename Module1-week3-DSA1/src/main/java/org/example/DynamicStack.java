@@ -58,10 +58,18 @@ public class DynamicStack<T> {
 
     // method to print the stack elements for debugging
     public void printStack() {
-        System.out.println("Stack is Empty");
-        return;
-    }
+        if (isEmpty()) {
+            System.out.println("Stack is Empty");
+            return;
+        }
 
-    Node<T> currentNode = top;
+        Node<T> currentNode = top;
+        System.out.println("Stack: ");
+        while (currentNode != null) {
+            System.out.println(currentNode.data + " ");
+            currentNode = currentNode.next;
+        }
+        System.out.println();
+    }
 
 }
